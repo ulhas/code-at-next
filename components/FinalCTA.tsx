@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function FinalCTA() {
   return (
-    <section id="register" className="bg-gradient-to-b from-white to-gray-50 px-6 py-24 md:py-32">
+    <section id="register" className="bg-gradient-to-br from-rose-50 via-white to-orange-50 px-6 py-24 md:py-32">
       <div className="mx-auto max-w-4xl">
         {/* CTA Content */}
         <motion.div

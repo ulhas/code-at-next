@@ -6,8 +6,6 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="relative min-h-screen bg-white px-6 py-20 md:py-32 flex items-center">
-      {/* Subtle background accent */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#FFF1CB] rounded-full blur-[120px] opacity-30 pointer-events-none" />
 
       <div className="relative mx-auto max-w-6xl w-full">
         {/* Logo and trust line */}

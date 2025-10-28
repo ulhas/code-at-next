@@ -52,7 +52,7 @@ export default function WhatYouLearn() {
   };
 
   return (
-    <section className="bg-gray-50 px-6 py-24 md:py-32">
+    <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 px-6 py-24 md:py-32">
       <div className="mx-auto max-w-6xl">
         {/* Section header */}
         <motion.div

@@ -6,28 +6,28 @@ export default function WhoCanJoin() {
   const eligibility = [
     {
       icon: "🎓",
-      title: "Students of Next School",
-      description: "This workshop is exclusively for Next School students.",
+      title: "Next School Students Only",
+      description: "This workshop is for Next School students.",
     },
     {
       icon: "📚",
-      title: "Grade 5 and Above",
-      description: "Perfect for students aged approximately 9–14 years.",
+      title: "Grade 5 and Up",
+      description: "Ages 9-14. Any grade from 5 onwards.",
     },
     {
       icon: "✨",
-      title: "No Coding Experience Needed",
-      description: "Complete beginners welcome. We start from zero.",
+      title: "Never Built a Product? Perfect.",
+      description: "We start from zero. Complete beginners welcome.",
     },
     {
       icon: "🔥",
-      title: "Curious & Ready to Build",
-      description: "You need to be curious and willing to build, not just watch.",
+      title: "Want to Build Real Things",
+      description: "Be curious. Be ready to ship. Not just learn.",
     },
   ];
 
   return (
-    <section className="bg-white px-6 py-24 md:py-32">
+    <section className="bg-white px-6 py-12 md:py-20">
       <div className="mx-auto max-w-5xl">
         {/* Section header */}
         <motion.div
@@ -35,12 +35,12 @@ export default function WhoCanJoin() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-10 md:mb-12 text-center"
         >
-          <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
+          <h2 className="mb-3 text-3xl font-bold text-gray-900 md:text-5xl">
             Who Can Join?
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-lg md:text-xl text-gray-600">
             Here's who this is for
           </p>
         </motion.div>
@@ -51,7 +51,7 @@ export default function WhoCanJoin() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, staggerChildren: 0.1 }}
-          className="mb-12 grid gap-5 md:grid-cols-2"
+          className="mb-8 md:mb-10 grid gap-4 md:gap-5 md:grid-cols-2"
         >
           {eligibility.map((item, index) => (
             <motion.div
@@ -90,9 +90,9 @@ export default function WhoCanJoin() {
                 1
               </div>
               <div>
-                <h4 className="mb-1 text-lg font-semibold text-gray-900">Weekly In-Person Sessions</h4>
+                <h4 className="mb-1 text-lg font-semibold text-gray-900">Weekly Sessions</h4>
                 <p className="text-base text-gray-600 leading-relaxed">
-                  Small-group sessions at school, 1–2 hours each week
+                  1-2 hours per week. At school. Small groups.
                 </p>
               </div>
             </div>
@@ -102,9 +102,9 @@ export default function WhoCanJoin() {
                 2
               </div>
               <div>
-                <h4 className="mb-1 text-lg font-semibold text-gray-900">Runs for a Few Months</h4>
+                <h4 className="mb-1 text-lg font-semibold text-gray-900">A Few Months</h4>
                 <p className="text-base text-gray-600 leading-relaxed">
-                  Not just a 1-weekend thing. You'll have time to build something real.
+                  Not a weekend workshop. Time to build something real.
                 </p>
               </div>
             </div>
@@ -114,9 +114,9 @@ export default function WhoCanJoin() {
                 3
               </div>
               <div>
-                <h4 className="mb-1 text-lg font-semibold text-gray-900">You'll Ship Something Real</h4>
+                <h4 className="mb-1 text-lg font-semibold text-gray-900">Ship Your Product</h4>
                 <p className="text-base text-gray-600 leading-relaxed">
-                  By the end, you'll have something you can show and say "I built this."
+                  By the end, you'll have launched something real. With real users.
                 </p>
               </div>
             </div>

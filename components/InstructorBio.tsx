@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function InstructorBio() {
   return (
-    <section className="bg-gradient-to-b from-purple-50 via-white to-purple-50 px-6 py-24 md:py-32">
+    <section className="bg-gradient-to-b from-purple-50 via-white to-purple-50 px-6 py-12 md:py-20">
       <div className="mx-auto max-w-4xl">
         {/* Section header */}
         <motion.div
@@ -12,12 +12,12 @@ export default function InstructorBio() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-10 md:mb-12 text-center"
         >
-          <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
+          <h2 className="mb-3 text-3xl font-bold text-gray-900 md:text-5xl">
             Who's Teaching You?
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-lg md:text-xl text-gray-600">
             Meet your instructor
           </p>
         </motion.div>
@@ -53,14 +53,13 @@ export default function InstructorBio() {
                 Hi, I'm <strong className="text-gray-900">Ulhas Mandrawadkar</strong>.
                 <br />
                 <br />
-                I run a software company that builds real products for real clients.
+                I've been building software for over 15 years. I run a company that makes real products for real clients.
                 <br />
                 <br />
-                I've taught adults and fresh graduates how to become software engineers and ship production apps.
+                I've taught hundreds of people how to code and ship apps that actually work.
                 <br />
                 <br />
-                Now I want to bring that same builder energy to students who are still in school — because I believe{" "}
-                <strong className="text-gray-900">you shouldn't have to wait until you're 25 to build something real</strong>.
+                Now I want to teach you. Because <strong className="text-gray-900">you don't need to wait until you're 25 to build something real</strong>.
               </p>
             </div>
 
@@ -68,41 +67,41 @@ export default function InstructorBio() {
             <div className="mb-8 grid gap-4 md:grid-cols-2">
               <div className="rounded-xl bg-gray-50 p-5 border border-gray-200">
                 <div className="mb-2 text-3xl">💼</div>
-                <h4 className="mb-2 text-base font-semibold text-gray-900">8+ Years Experience</h4>
+                <h4 className="mb-2 text-base font-semibold text-gray-900">15+ Years Building</h4>
                 <p className="text-sm text-gray-600">
-                  Building real products with real clients in production
+                  Real products. Real clients. In production.
                 </p>
               </div>
 
               <div className="rounded-xl bg-gray-50 p-5 border border-gray-200">
                 <div className="mb-2 text-3xl">🎓</div>
-                <h4 className="mb-2 text-base font-semibold text-gray-900">Proven Teacher</h4>
+                <h4 className="mb-2 text-base font-semibold text-gray-900">Hundreds Taught</h4>
                 <p className="text-sm text-gray-600">
-                  Trained adults and graduates to become professional engineers
+                  From beginners to professional engineers.
                 </p>
               </div>
             </div>
 
-            {/* Parent note */}
+            {/* Important info */}
             <div className="rounded-xl border-2 border-[#FFF1CB] bg-[#FFF1CB]/30 p-6 md:p-8">
               <div className="mb-4 flex items-center gap-3">
-                <span className="text-2xl">🛡️</span>
+                <span className="text-2xl">🏫</span>
                 <h4 className="text-lg font-semibold text-gray-900">
-                  For Parents
+                  What You Should Know
                 </h4>
               </div>
               <ul className="space-y-2 text-base text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-green-600 font-bold">✓</span>
-                  <span>Sessions are conducted <strong className="text-gray-900">in school</strong>, in a structured and safe environment</span>
+                  <span>All sessions happen <strong className="text-gray-900">at school</strong>, in a safe and structured environment</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-600 font-bold">✓</span>
-                  <span>Focus is on creativity, problem solving, ethical use of technology, and responsible selling</span>
+                  <span>Focus is on creativity, problem solving, building real things, and ethical use of technology</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-600 font-bold">✓</span>
-                  <span><strong className="text-gray-900">Approved by school leadership</strong></span>
+                  <span><strong className="text-gray-900">Approved by Next School leadership</strong></span>
                 </li>
               </ul>
             </div>

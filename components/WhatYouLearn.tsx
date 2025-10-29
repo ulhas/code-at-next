@@ -6,33 +6,33 @@ export default function WhatYouLearn() {
   const skills = [
     {
       icon: "💡",
-      title: "Problem Solving",
-      description: "See something annoying in daily life → design a fix.",
-    },
-    {
-      icon: "💻",
-      title: "Software Building",
-      description: "Basics of how apps/websites/tools are made.",
+      title: "Finding Real Problems",
+      description: "Spot problems worth solving. Build solutions.",
     },
     {
       icon: "🎨",
-      title: "UI & UX Thinking",
-      description: '"Will other people actually like using this?"',
+      title: "Product Design",
+      description: "Design products people actually want to use.",
+    },
+    {
+      icon: "💻",
+      title: "Building Software",
+      description: "Turn your idea into working code.",
     },
     {
       icon: "🚀",
-      title: "Launch Mindset",
-      description: 'How to release version 1 instead of waiting for "perfect".',
+      title: "Shipping Products",
+      description: "Launch version 1. Iterate. Don't wait.",
     },
     {
       icon: "💬",
-      title: "Talking to Users",
-      description: 'Asking "What do you need?" and not getting shy.',
+      title: "User Feedback",
+      description: "Talk to users. Learn what works. Improve.",
     },
     {
-      icon: "💰",
-      title: "Basics of Pricing & Selling",
-      description: 'Understanding value, not "becoming a businessman overnight."',
+      icon: "🎯",
+      title: "Founder Mindset",
+      description: "Think like someone who builds companies.",
     },
   ];
 
@@ -52,7 +52,7 @@ export default function WhatYouLearn() {
   };
 
   return (
-    <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 px-6 py-24 md:py-32">
+    <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 px-6 py-12 md:py-20">
       <div className="mx-auto max-w-6xl">
         {/* Section header */}
         <motion.div
@@ -60,13 +60,13 @@ export default function WhatYouLearn() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-10 md:mb-12 text-center"
         >
-          <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
+          <h2 className="mb-3 text-3xl font-bold text-gray-900 md:text-5xl">
             What You'll Learn
           </h2>
-          <p className="text-xl text-gray-600">
-            Skills You Actually Keep
+          <p className="text-lg md:text-xl text-gray-600">
+            Founder skills. Product skills. Real skills.
           </p>
         </motion.div>
 
@@ -76,7 +76,7 @@ export default function WhatYouLearn() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="mb-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3"
+          className="mb-8 md:mb-10 grid gap-4 md:gap-5 md:grid-cols-2 lg:grid-cols-3"
         >
           {skills.map((skill, index) => (
             <motion.div
@@ -99,7 +99,7 @@ export default function WhatYouLearn() {
           ))}
         </motion.div>
 
-        {/* Parent reassurance */}
+        {/* Important note */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -108,14 +108,13 @@ export default function WhatYouLearn() {
           className="rounded-xl border-2 border-[#B7A3E3] bg-[#B7A3E3]/5 p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <span className="text-3xl">👨‍👩‍👧‍👦</span>
+            <span className="text-3xl">✨</span>
             <h3 className="text-xl font-semibold text-gray-900">
-              For Parents
+              Real Skills
             </h3>
           </div>
           <p className="text-base text-gray-700 leading-relaxed">
-            These are the same skills adult startup founders learn. We just teach them in a way that makes sense
-            for 10–14 year olds — with <strong className="text-gray-900">lots of help</strong>.
+            These are the same skills adults use to build real products. We just teach them in a way that makes sense for you. With <strong className="text-gray-900">lots of help</strong> along the way.
           </p>
         </motion.div>
       </div>

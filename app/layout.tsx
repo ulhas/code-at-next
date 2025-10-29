@@ -14,7 +14,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Build & Sell Software Workshop | Next School",
-  description: "A hands-on workshop at Next School where students (Grade 5+) create real software, launch it, and learn how to sell it like a mini startup founder. Led by Ulhas Mandrawadkar, founder of Procedure Technologies.",
+  description: "Kickstart your startup. Build a real software product that solves real problems for real users. A hands-on product workshop at Next School for Grade 5+ students. Led by Ulhas Mandrawadkar.",
+  openGraph: {
+    title: "Build & Sell Software Workshop | Next School",
+    description: "Kickstart your startup. Build a real software product that solves real problems for real users. A hands-on product workshop at Next School for Grade 5+ students. Led by Ulhas Mandrawadkar.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Build & Sell Software Workshop | Next School",
+    description: "Kickstart your startup. Build a real software product that solves real problems for real users. A hands-on product workshop at Next School for Grade 5+ students.",
+  },
 };
 
 export default function RootLayout({

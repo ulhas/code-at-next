@@ -8,9 +8,9 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "Will my child be writing code?",
+      question: "Will I actually write code?",
       answer:
-        "Yes, but not on day 1. First we decide what we're building. Then we learn just enough tech to make it work.",
+        "Yes, but that's not the focus. First you find a problem worth solving. Then you design your product. Then you pick up the coding skills you need to build it. Code is just the tool.",
     },
     {
       question: "Is this safe / supervised?",
@@ -23,19 +23,19 @@ export default function FAQ() {
         "Around 1–2 hours/week in school + some optional work at home if they want to improve their idea.",
     },
     {
-      question: 'Will kids be pushed to "make money"?',
+      question: "Will I actually launch my product?",
       answer:
-        "We teach them how money on the internet works (subscriptions, selling digital tools, etc.) in an age-appropriate and ethical way. There is zero pressure to sell. Learning the process is the goal.",
+        "Yes. By the end, you'll have a real working product that people can use. We help you put it online and get your first real users.",
     },
     {
-      question: "Does my child need a laptop?",
+      question: "Do I need my own laptop?",
       answer:
         "Laptop / device requirements will be shared before the first session (depends on school policy).",
     },
     {
-      question: 'What if my child is shy or not "technical"?',
+      question: 'What if I\'m not "technical"?',
       answer:
-        'Perfect. This is not only for "top coders." This is for kids who like solving problems, designing, drawing UIs, talking to people, or just making stuff that others use.',
+        'Perfect. This is not for "top coders." This is for anyone who wants to solve problems, design things, talk to users, or build products people actually use.',
     },
     {
       question: "Is this part of school or an external class?",
@@ -45,12 +45,12 @@ export default function FAQ() {
     {
       question: "What happens after the program ends?",
       answer:
-        "Your child keeps what they built. They'll know how to keep improving it, and how to launch version 2 on their own.",
+        "You keep your product. You'll know how to keep improving it, get more users, and even build version 2 on your own.",
     },
   ];
 
   return (
-    <section id="faq" className="bg-white px-6 py-24 md:py-32">
+    <section id="faq" className="bg-white px-6 py-12 md:py-20">
       <div className="mx-auto max-w-3xl">
         {/* Section header */}
         <motion.div
@@ -58,13 +58,13 @@ export default function FAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-10 md:mb-12 text-center"
         >
-          <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
-            FAQ for Parents
+          <h2 className="mb-3 text-3xl font-bold text-gray-900 md:text-5xl">
+            Common Questions
           </h2>
-          <p className="text-xl text-gray-600">
-            Questions we get asked most often
+          <p className="text-lg md:text-xl text-gray-600">
+            Everything you need to know
           </p>
         </motion.div>
 
@@ -133,11 +133,10 @@ export default function FAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-12 rounded-xl border-2 border-[#FFF1CB] bg-[#FFF1CB]/30 p-5 md:p-6"
+          className="mt-8 md:mt-10 rounded-xl border-2 border-[#FFF1CB] bg-[#FFF1CB]/30 p-4 md:p-6"
         >
           <p className="text-center text-base font-medium text-gray-800">
-            <strong>Important:</strong> This is not financial advice. The real goal is confidence, creativity, and
-            entrepreneurial thinking.
+            <strong>Important:</strong> The real goal is learning to spot problems, build solutions, and ship products that solve real problems for real users.
           </p>
         </motion.div>
       </div>

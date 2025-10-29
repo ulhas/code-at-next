@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import WhatYouDo from "@/components/WhatYouDo";
 import WhyDifferent from "@/components/WhyDifferent";
 import WhatYouLearn from "@/components/WhatYouLearn";
+import TechnologyStack from "@/components/TechnologyStack";
 import WhoCanJoin from "@/components/WhoCanJoin";
 import InstructorBio from "@/components/InstructorBio";
 import FAQ from "@/components/FAQ";
@@ -14,6 +15,7 @@ export default function Home() {
       <WhatYouDo />
       <WhyDifferent />
       <WhatYouLearn />
+      <TechnologyStack />
       <WhoCanJoin />
       <InstructorBio />
       <FAQ />

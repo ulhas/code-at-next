@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function WhyDifferent() {
   return (
-    <section className="bg-white px-6 py-24 md:py-32">
+    <section className="bg-white px-6 py-12 md:py-20">
       <div className="mx-auto max-w-6xl">
         {/* Section header */}
         <motion.div
@@ -12,20 +12,18 @@ export default function WhyDifferent() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-10 md:mb-12 text-center"
         >
-          <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
-            Why This Is Different from
-            <br />
-            a Normal Coding Class
+          <h2 className="mb-3 text-3xl font-bold text-gray-900 md:text-5xl">
+            Why This Is Way Different
           </h2>
-          <p className="text-xl text-gray-600">
-            You're not here to do homework. You're here to build something real.
+          <p className="text-lg md:text-xl text-gray-600">
+            Not a coding class. A product workshop.
           </p>
         </motion.div>
 
         {/* Comparison grid */}
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-5 md:gap-6 md:grid-cols-2">
           {/* Normal Coding Class */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -80,25 +78,25 @@ export default function WhyDifferent() {
               <li className="flex items-start gap-3">
                 <span className="text-green-600 font-bold">✓</span>
                 <span>
-                  You build something to solve a <strong className="text-gray-900">real problem</strong> in your life/school/home
+                  Build a <strong className="text-gray-900">real product</strong> that solves a real problem for real users
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-green-600 font-bold">✓</span>
                 <span>
-                  You learn <strong className="text-gray-900">product thinking</strong>, not just typing code
+                  Think like a <strong className="text-gray-900">founder</strong>, not a student doing homework
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-green-600 font-bold">✓</span>
                 <span>
-                  You get to <strong className="text-gray-900">launch it, show it, maybe even sell it</strong>
+                  Actually <strong className="text-gray-900">launch your product</strong>. Get real users. Get feedback.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-green-600 font-bold">✓</span>
                 <span>
-                  You learn how to <strong className="text-gray-900">talk to people like a founder</strong>
+                  Pick up <strong className="text-gray-900">coding skills</strong> as you build, not before
                 </span>
               </li>
             </ul>
@@ -111,10 +109,10 @@ export default function WhyDifferent() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-12 text-center"
+          className="mt-8 md:mt-10 text-center"
         >
-          <p className="text-2xl font-semibold text-gray-800">
-            You'll feel like a <span className="text-[#FF8F8F]">founder</span>, not a "student doing homework."
+          <p className="text-xl md:text-2xl font-semibold text-gray-800">
+            Build like a <span className="text-[#FF8F8F]">founder</span>. Ship like a <span className="text-[#FF8F8F]">startup</span>.
           </p>
         </motion.div>
       </div>

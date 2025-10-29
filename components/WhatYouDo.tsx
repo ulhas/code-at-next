@@ -6,28 +6,28 @@ export default function WhatYouDo() {
   const steps = [
     {
       icon: "💡",
-      title: "Pick a Real Problem",
-      description: "Find something in your life, school, or home that bugs you or could be better.",
+      title: "Find a Problem That Bugs You",
+      description: "Something annoying at school? At home? With homework? That's your starting point.",
     },
     {
       icon: "🎨",
-      title: "Design Your Solution",
-      description: "Create an app or tool that actually solves it. Make it yours.",
+      title: "Design Your Own Solution",
+      description: "Imagine an app that fixes it. Sketch it out. Make it exactly how YOU want it.",
     },
     {
       icon: "⚙️",
-      title: "Build It Step by Step",
-      description: "We'll show you how. You'll learn as you go. No experience needed.",
+      title: "Build Your Product",
+      description: "Turn your idea into working software. Pick up coding skills as you build. Start from zero.",
     },
     {
       icon: "🚀",
-      title: "Launch It for Real",
-      description: "Make it live so people can actually use what you built.",
+      title: "Launch It to Real People",
+      description: "Put your app out there. Watch friends and classmates actually use what you made.",
     },
     {
-      icon: "💰",
-      title: "Learn to Sell It",
-      description: "Understand how to show it to others and what it means to charge for value.",
+      icon: "🎯",
+      title: "Get People to Use It",
+      description: "Learn how to get your app in front of real users. Make something people want.",
     },
   ];
 
@@ -47,7 +47,7 @@ export default function WhatYouDo() {
   };
 
   return (
-    <section className="bg-gradient-to-b from-amber-50 via-white to-amber-50 px-6 py-24 md:py-32">
+    <section className="bg-gradient-to-b from-amber-50 via-white to-amber-50 px-6 py-12 md:py-20">
       <div className="mx-auto max-w-6xl">
         {/* Section header */}
         <motion.div
@@ -55,13 +55,13 @@ export default function WhatYouDo() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-10 md:mb-12 text-center"
         >
-          <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
-            What You'll Do in This Workshop
+          <h2 className="mb-3 text-3xl font-bold text-gray-900 md:text-5xl">
+            Here's What You'll Actually Do
           </h2>
-          <p className="text-xl text-gray-600">
-            This is what you're actually signing up for
+          <p className="text-lg md:text-xl text-gray-600">
+            From problem to product. From idea to launch.
           </p>
         </motion.div>
 
@@ -71,7 +71,7 @@ export default function WhatYouDo() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="mb-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+          className="mb-10 md:mb-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3"
         >
           {steps.map((step, index) => (
             <motion.div
@@ -96,12 +96,12 @@ export default function WhatYouDo() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12 rounded-xl border-2 border-[#FFF1CB] bg-[#FFF1CB]/40 p-6"
+          className="mb-8 md:mb-10 rounded-xl border-2 border-[#FFF1CB] bg-[#FFF1CB]/40 p-4 md:p-6"
         >
           <p className="text-base font-semibold text-gray-900">
             ⚡ Very important:{" "}
             <span className="font-normal text-gray-700">
-              No previous coding experience needed. We'll start from zero.
+              This isn't about memorizing code. It's about building something real. Coding is just the tool.
             </span>
           </p>
         </motion.div>
@@ -112,38 +112,31 @@ export default function WhatYouDo() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="rounded-xl border border-gray-200 bg-white p-8 md:p-10 shadow-sm"
+          className="rounded-xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm"
         >
-          <div className="mb-6">
+          <div className="mb-4">
             <span className="inline-block rounded-full bg-gray-900 px-4 py-1.5 text-sm font-semibold text-white">
               EXAMPLE PROJECT
             </span>
           </div>
 
-          <h3 className="mb-6 text-3xl font-bold text-gray-900">
-            "Homework Reminder App"
+          <h3 className="mb-4 md:mb-5 text-2xl md:text-3xl font-bold text-gray-900">
+            "Campus Swap" - School Marketplace App
           </h3>
 
-          <div className="space-y-4 text-lg text-gray-700 mb-6">
+          <div className="space-y-3 text-base md:text-lg text-gray-700">
             <div className="flex items-start gap-3">
               <span className="text-green-600 font-bold">✓</span>
-              <p>Sends you (and maybe your parent) reminders so you never forget assignments</p>
+              <p><strong>The problem:</strong> Students want to trade books, sell old games, swap snacks. No easy way to do it.</p>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-green-600 font-bold">✓</span>
-              <p>You charge other students ₹99/month</p>
+              <p><strong>Your solution:</strong> Build a marketplace app just for your school. Post items, chat with buyers, make trades happen.</p>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-green-600 font-bold">✓</span>
-              <p>Boom, your first SaaS</p>
+              <p><strong>Real impact:</strong> 50+ classmates using it. Real transactions happening. You're solving an actual problem.</p>
             </div>
-          </div>
-
-          {/* Legal disclaimer */}
-          <div className="rounded-lg bg-gray-50 p-4 border border-gray-200">
-            <p className="text-sm text-gray-600">
-              Note: We can't promise you'll make money. We <em>can</em> teach you how to try.
-            </p>
           </div>
         </motion.div>
       </div>

@@ -13,18 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Build & Sell Software Workshop | Next School",
-  description: "Kickstart your startup. Build a real software product that solves real problems for real users. A hands-on product workshop at Next School for Grade 5+ students. Led by Ulhas Mandrawadkar.",
+  title: "Kickstart Your Startup | Next School",
+  description: "Build a real software product that solves real problems for real users. A hands-on product workshop at Next School for Grade 5+ students. Led by Ulhas Mandrawadkar.",
   openGraph: {
-    title: "Build & Sell Software Workshop | Next School",
-    description: "Kickstart your startup. Build a real software product that solves real problems for real users. A hands-on product workshop at Next School for Grade 5+ students. Led by Ulhas Mandrawadkar.",
+    title: "Kickstart Your Startup | Next School",
+    description: "Build a real software product that solves real problems for real users. Launch it. Get real users. Think like a founder. A hands-on product workshop for Grade 5+ students at Next School.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Build & Sell Software Workshop | Next School",
-    description: "Kickstart your startup. Build a real software product that solves real problems for real users. A hands-on product workshop at Next School for Grade 5+ students.",
+    title: "Kickstart Your Startup | Next School",
+    description: "Build a real software product that solves real problems for real users. Launch it. Get real users. Think like a founder.",
   },
 };
 

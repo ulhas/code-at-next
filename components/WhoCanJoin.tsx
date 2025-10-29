@@ -12,7 +12,7 @@ export default function WhoCanJoin() {
     {
       icon: "📚",
       title: "Grade 5 and Up",
-      description: "Ages 9-14. Any grade from 5 onwards.",
+      description: "Ages 10+. Any grade from 5 onwards.",
     },
     {
       icon: "✨",
